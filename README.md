@@ -1,1 +1,1 @@
-# Corn-Leaf-Diseases-Detection
+# Corn Leaf Diseases-Detection
