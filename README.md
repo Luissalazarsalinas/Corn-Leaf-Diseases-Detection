@@ -36,4 +36,7 @@ In this project I tasted the folling Convolutional Neural Network Architecture b
 
  - MobileNetV2 (Pretrained with imginet images)
 
-Fine Tune model Performnace: 93% (accuracy score metric)***
+Fine Tune model Performnace: 93% (accuracy score metric)
+
+## **Deploy**
+The Streamlit app was deployed on Streamlit Cloud
