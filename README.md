@@ -34,6 +34,6 @@ Data preprocessing steps:
 ## Modelling
 In this project I tasted the folling Convolutional Neural Network Architecture by transfer learning method:
 
- - Xception (Pretrained with imgine images)
+ - MobileNetV2 (Pretrained with imginet images)
 
-Fine Tune model Performnace: 93% (accuracy score metric)
+Fine Tune model Performnace: 93% (accuracy score metric)***
