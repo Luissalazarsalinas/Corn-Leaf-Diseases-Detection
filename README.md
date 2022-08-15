@@ -12,6 +12,8 @@ The plant diseases compose a threat to global food security and smallholder farm
 
 This Streamlit App utilizes a Deep Learning model to detect diseases that attact the corn leaves, based in digital images.
 
+The App can be viewed through this [Link](https://luissalazarsalinas-corn-leaf-diseases-corn-diseases--app-s9j6w1.streamlitapp.com/)
+
 ## **Data Preparation**
 
 The plant-Village dataset contains 39 different classes of plant leaf(healthy and unhealthy) and background images(61,486 in total)(Geetharamani & Pandian,2019). In this project, we use the version without augmentation and just used the corn dataset, which contained four different classes (Blight, Common rust, Gray Leaf Spot, and Healthy).
