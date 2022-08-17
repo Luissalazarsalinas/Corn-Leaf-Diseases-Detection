@@ -15,7 +15,7 @@ In developing countries, smallholder farmers produce more than 80% of the agricu
 and reports indicate that more than fifty percent loss in crop due to pests and diseases. 
 The world population expected to grow to more than 9.7 billion by 2050, making food security a major concern in the upcoming years. Hence, rapid and accurate methods of indentying plant diseases are needed to do the appropiate measures.
 
-**This Streamlit App utilizes a Deep Learning model to detect diseases that attact the corn leaves, based in digital images.**
+**This Streamlit App utilizes a Deep Learning model to detect diseases(Northern Leaf Blight,Common Rust,Gray Leaf Spot) that attact the corn leaves, based in digital images.**
 
 The Notebook, model and documentation(streamlit script) are available on [Github](https://github.com/Luissalazarsalinas/Corn-Leaf-Diseases-Detection)
 
@@ -80,7 +80,7 @@ if __name__=='__main__':
 
     img = MobileNetV2_preprocess_input(img_arr)
 
-    Genrate_pred = st.button("Detection Result") 
+    Genrate_pred = st.button("Detect Result") 
  
     if Genrate_pred:
         st.subheader('Probabilities by Class') 
@@ -88,6 +88,9 @@ if __name__=='__main__':
         preds_class = model.predict(img).argmax()
 
         st.dataframe(predictions(preds))
-        st.subheader("The Corn Leaf is infected by {} disease".format(map_class[preds_class])) 
-    
 
+        if (map_class[preds_class]=="Northern Leaf Blight") or (map_class[preds_class]=="Common Rust") or (map_class[preds_class]=="Gray Leaf Spot"): 
+            st.subheader("The Corn Leaf is infected by {} disease".format(map_class[preds_class]))
+
+        else:
+            st.subheader("The Corn Leaf is {}".format(map_class[preds_class]))
